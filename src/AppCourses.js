@@ -12,7 +12,7 @@ const AppCourses = () => {
                         <div className="text">
                             <h3>Course 1</h3>
                             <h4 className="price">$11.99</h4>
-                            <a className="viewmore" href="coursepage.html">&or; View More</a>
+                            <div className="viewmore" to='/coursepage'>&or; View More</div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, obcaecati veniam dignissimos assumenda laboriosam nemo placeat neque excepturi doloribus facere culpa tempore impedit omnis nulla perspiciatis cum in adipisci debitis nostrum officia? Voluptatibus similique itaque illum debitis, magnam velit. Explicabo, quis repellat.</p>
                         </div>
                     </div>
@@ -23,7 +23,7 @@ const AppCourses = () => {
                         <div className="text">
                             <h3>Course 2</h3>
                             <h4 className="price">$11.99</h4>
-                            <a className="viewmore" href="coursepage.html">&or; View More</a>
+                            <div className="viewmore" to='/coursepage'>&or; View More</div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, obcaecati veniam dignissimos assumenda laboriosam nemo placeat neque excepturi doloribus facere culpa tempore impedit omnis nulla perspiciatis cum in adipisci debitis nostrum officia? Voluptatibus similique itaque illum debitis, magnam velit. Explicabo, quis repellat.</p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const AppCourses = () => {
                         <div className="text">
                             <h3>Course 3</h3>
                             <h4 className="price">$11.99</h4>
-                            <a className="viewmore" href="coursepage.html">&or; View More</a>
+                            <div className="viewmore" to='/coursepage'>&or; View More</div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, obcaecati veniam dignissimos assumenda laboriosam nemo placeat neque excepturi doloribus facere culpa tempore impedit omnis nulla perspiciatis cum in adipisci debitis nostrum officia? Voluptatibus similique itaque illum debitis, magnam velit. Explicabo, quis repellat.</p>
                         </div>
                     </div>
@@ -45,12 +45,12 @@ const AppCourses = () => {
                         <div className="text">
                             <h3>Course 4</h3>
                             <h4 className="price">$11.99</h4>
-                            <a className="viewmore" href="coursepage.html">&or; View More</a>
+                            <div className="viewmore" to='/coursepage'>&or; View More</div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, obcaecati veniam dignissimos assumenda laboriosam nemo placeat neque excepturi doloribus facere culpa tempore impedit omnis nulla perspiciatis cum in adipisci debitis nostrum officia? Voluptatibus similique itaque illum debitis, magnam velit. Explicabo, quis repellat.</p>
                         </div>
                     </div>
                 </Link>
-                <Link to='/courses' style={{textDecoration:"none"}}><a id="next" className="item">&#10095;</a></Link>
+                <Link to='/courses' style={{textDecoration:"none"}}><p id="next" className="item">&#10095;</p></Link>
             </div>
         </>
         // </Router>
