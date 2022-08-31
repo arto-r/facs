@@ -16,8 +16,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path='https://arto-r.github.io/facs/' element={<Home />} />
-          <Route path='/signup' element={<SignUp />} />
-          <Route path='/login' element={<Login />} />
+          <Route path='https://arto-r.github.io/facs/signup' element={<SignUp />} />
+          <Route path='https://arto-r.github.io/facs/login' element={<Login />} />
         </Routes>
         
       </Router>
