@@ -5,7 +5,7 @@ const AppTopTutors = () => {
     return(
         // <Router>
             <div className="toptutors">
-                <h1 style={{textAlign: 'center',position:'relative',top:'25px'}}><Link to='https://arto-r.github.io/facs/vote' style={{color:'white'}}>Top tutors of the month</Link></h1>
+                <h1 style={{textAlign: 'center',position:'relative',top:'25px'}}><Link to='/vote' style={{color:'white'}}>Top tutors of the month</Link></h1>
                 <div className="notheading">
                     <div className="toptutor" id="topnum2">
                         <h3 className="nh2">#2</h3>
