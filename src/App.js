@@ -8,6 +8,9 @@ import About from './About';
 import Footer from './Footer';
 import SignUp from './SignUp';
 import Login from './Login';
+import Coursepage from './Coursepage';
+import Courses from './Courses';
+import Profile from './Profile';
 
 const App = () => {
   
@@ -17,6 +20,9 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='login' element={<Login />} />
+        <Route path='coursepage' element={<Coursepage />} />
+        <Route path='courses' element={<Courses />} />
+        <Route path='profile' element={<Profile />} />
       </Routes>
     </>
   )

@@ -1,9 +1,9 @@
 import Navbar from "./Navbar";
 
-const Coursepage = () => {
+const Courses = () => {
     return (
         <Navbar />
     );
 }
 
-export default Coursepage;
+export default Courses;
