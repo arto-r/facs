@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Navbar from './Navbar';
 import Header from './Header';
 import AppCourses from './AppCourses';
@@ -13,14 +13,11 @@ const App = () => {
   
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path='https://arto-r.github.io/facs/home' element={<Home />} />
-          <Route path='https://arto-r.github.io/facs/signup' element={<SignUp />} />
-          <Route path='https://arto-r.github.io/facs/login' element={<Login />} />
-        </Routes>
-        
-      </Router>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
     </>
   )
 }
