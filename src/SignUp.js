@@ -18,7 +18,7 @@ const SignUp = () => {
             
             <input type="submit" id="signup" value="Sign Up" />
                 
-            <Link to='/login'>Already have an account?</Link>
+            <Link to='login'>Already have an account?</Link>
             
         </form>
     )
