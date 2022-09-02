@@ -8,7 +8,7 @@ const AppTopTutors = () => {
             <div className="notheading">
                 <Link to="/profile" style={{textDecoration:"none"}}>
                     <div className="toptutor" id="topnum2">
-                        <h3 className="nh2">#2</h3>
+                        <h3 className="nh2" style={{color:"white"}}>#2</h3>
                         <div className="n2">
                             <img src={require("./assets/blurredfa.jpg")} />
                             <h3>Chris Kwon</h3>
@@ -17,7 +17,7 @@ const AppTopTutors = () => {
                 </Link>
                 <Link to="/profile" style={{textDecoration:"none"}}>
                     <div className="toptutor" id="topnum1">
-                        <h3 className="nh1">#1</h3>
+                        <h3 className="nh1" style={{color:"white"}}>#1</h3>
                         <div className="n1">
                             <img src={require("./assets/blurredfa.jpg")} />
                             <h3>Artoghrul Rashid</h3>
@@ -26,7 +26,7 @@ const AppTopTutors = () => {
                 </Link>
                 <Link to="/profile" style={{textDecoration:"none"}}>
                     <div className="toptutor" id="topnum3">
-                        <h3 className="nh3">#3</h3>
+                        <h3 className="nh3" style={{color:"white"}}>#3</h3>
                         <div className="n3">
                             <img src={require("./assets/blurredfa.jpg")} />
                             <h3>Egemen Sarjkuhubhuybyi</h3>
