@@ -1,0 +1,19 @@
+.everything{
+    display: grid;
+    grid-template-columns: '1fr 1fr';
+    height:800px;
+}
+
+.teacher-profile {
+    background-color: white;
+    width:35%;
+    height: 100%;
+}
+
+.selfie-profile{
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
