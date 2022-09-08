@@ -38,8 +38,8 @@ h1{
 }
 .toptutor{
   position: relative;
-  /* transform: translateY(150px);
-  opacity: 0; */
+  transform: translateY(150px);
+  opacity: 0;
   transition: 2s all ease;
 }
 .toptutor.active{
@@ -166,8 +166,8 @@ h1{
   text-decoration: none;
   color:#000; 
 }.item{
-  /* transform: translateY(150px);
-  opacity: 0; */
+  transform: translateY(150px);
+  opacity: 0;
   transition: 1s all ease;
 }
 .item.active{

@@ -11,6 +11,7 @@ import Login from './Login';
 import Coursepage from './Coursepage';
 import Courses from './Courses';
 import Profile from './Profile';
+import NavbarLoggedIn from './NavbarLoggedIn';
 
 const App = () => {
   
@@ -18,6 +19,7 @@ const App = () => {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='loggedin' element={<HomeLoggedIn />} />
         <Route path='signup' element={<SignUp />} />
         <Route path='login' element={<Login />} />
         <Route path='coursepage' element={<Coursepage />} />
@@ -32,6 +34,19 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <Header />
+      <AppCourses />
+      <AppTopTutors />
+      <About />
+      <Footer />
+    </>
+  )
+}
+
+const HomeLoggedIn = () => {
+  return (
+    <>
+      <NavbarLoggedIn />
       <Header />
       <AppCourses />
       <AppTopTutors />

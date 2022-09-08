@@ -1,37 +1,45 @@
 import { Link } from 'react-router-dom'
+import AppTopTutor from './AppTopTutor';
 
 const AppTopTutors = () => {
+
+    function reveal() {
+        var reveals = document.querySelectorAll(".toptutor");
+
+        for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 50;
+        
+            if(elementTop<windowHeight-elementVisible){
+                reveals[i].classList.add("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", reveal);
 
     return(
         <div className="toptutors">
             <h1 style={{textAlign: 'center',position:'relative',top:'25px'}}><Link to='/vote' style={{color:'white'}}>Top tutors of the month</Link></h1>
             <div className="notheading">
                 <Link to="/profile" style={{textDecoration:"none"}}>
-                    <div className="toptutor" id="topnum2">
-                        <h3 className="nh2" style={{color:"white"}}>#2</h3>
-                        <div className="n2">
-                            <img src={require("./assets/blurredfa.jpg")} />
-                            <h3>Chris Kwon</h3>
-                        </div>
-                    </div>
+                    <AppTopTutor 
+                        fullname="Chris Kwon"
+                        profilepic={require("./assets/blurredfa.jpg")}
+                        place={2}/>
                 </Link>
                 <Link to="/profile" style={{textDecoration:"none"}}>
-                    <div className="toptutor" id="topnum1">
-                        <h3 className="nh1" style={{color:"white"}}>#1</h3>
-                        <div className="n1">
-                            <img src={require("./assets/blurredfa.jpg")} />
-                            <h3>Artoghrul Rashid</h3>
-                        </div>
-                    </div>
+                    <AppTopTutor 
+                        fullname="Artoghrul Rashid"
+                        profilepic={require("./assets/blurredfa.jpg")}
+                        place={1}/>
                 </Link>
                 <Link to="/profile" style={{textDecoration:"none"}}>
-                    <div className="toptutor" id="topnum3">
-                        <h3 className="nh3" style={{color:"white"}}>#3</h3>
-                        <div className="n3">
-                            <img src={require("./assets/blurredfa.jpg")} />
-                            <h3>Egemen Sarjkuhubhuybyi</h3>
-                        </div>
-                    </div>
+                    <AppTopTutor 
+                        fullname="Egemen Sarjkuhubhuybyi"
+                        profilepic={require("./assets/blurredfa.jpg")}
+                        place={3}/>
                 </Link>
             </div>
         </div>

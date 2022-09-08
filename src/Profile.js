@@ -1,14 +1,30 @@
-import Navbar from "./Navbar";
+import { Link } from 'react-router-dom'
 import Footer from "./Footer"
 import './Profile.css'
+import AppCourse from './AppCourse'
+import NavbarLoggedIn from './NavbarLoggedIn';
 
 const Profile = () => {
     return (
         <>
-            <Navbar />
+            <NavbarLoggedIn />
             <div className="everything">
                 <div className="teacher-profile">
                     <img className="selfie-profile" src={require("./assets/selfie.jpg")} alt="selfie.jpg"/>
+                </div>
+                <div className='courses'>
+                    <Link to="/coursepage">
+                        <AppCourse id={"p1"} />
+                    </Link>
+                    <Link  to="/coursepage">
+                        <AppCourse id={"p2"} />
+                    </Link>
+                    <Link to='/coursepage'>
+                        <AppCourse id={"p3"} />
+                    </Link>
+                    <Link to='/coursepage'>
+                        <AppCourse id={"p4"} />
+                    </Link>
                 </div>
             </div>
             <Footer />
