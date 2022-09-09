@@ -12,20 +12,28 @@ const Navbar = ({ loggedIn }) => {
         prevScrollpos = currentScrollPos;
     });
 
+    function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+     }
+
     return(
         <div id="navbar" className="topnav">
-            <ul>
-            <li><Link to='../'>Home</Link></li>
-                <li><Link to='../courses'>Courses</Link></li>
-                <div className="right">
-                    {!loggedIn ? 
-                    <>
-                        <li><Link to='../signup'>Sign Up</Link></li>
-                        <li><Link to='../login'>Login</Link></li>
-                    </> :
-                    <li><Link to='../profile'>Profile</Link></li>}
-                </div>
-            </ul>
+            <Link to='../'>Home</Link>
+            <Link to='../courses'>Courses</Link>
+            <div className="right">
+                {!loggedIn ? 
+                <>
+                    <Link to='../signup'>Sign Up</Link>
+                    <Link to='../login'>Login</Link>
+                </> :
+                <Link to='../profile'>Profile</Link>}
+            </div>
+            <a className='icon' onClick={myFunction}><i className="fa fa-bars"></i></a>
         </div>
     )
 }
