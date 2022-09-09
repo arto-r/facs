@@ -17,18 +17,8 @@ const AppCourses = () => {
             }
         }
     }
-    var prevScrollpos = window.pageYOffset;
 
     window.addEventListener("scroll", reveal1);
-    window.addEventListener("scroll", function() {
-        var currentScrollPos = window.pageYOffset;
-        if(prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "-1px";
-        }else{
-            document.getElementById("navbar").style.top = "-49px";
-        }
-        prevScrollpos = currentScrollPos;
-    });
     return(
         <>
             <h1><Link to='/courses' style={{color:'white'}}>Offered Courses</Link></h1>

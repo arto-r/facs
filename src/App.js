@@ -11,7 +11,6 @@ import Login from './Login';
 import Coursepage from './Coursepage';
 import Courses from './Courses';
 import Profile from './Profile';
-import NavbarLoggedIn from './NavbarLoggedIn';
 
 const App = () => {
   
@@ -33,7 +32,7 @@ const App = () => {
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <Navbar loggedIn={false}/>
       <Header />
       <AppCourses />
       <AppTopTutors />
@@ -46,7 +45,7 @@ const Home = () => {
 const HomeLoggedIn = () => {
   return (
     <>
-      <NavbarLoggedIn />
+      <Navbar loggedIn={true}/>
       <Header />
       <AppCourses />
       <AppTopTutors />

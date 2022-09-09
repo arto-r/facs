@@ -1,16 +1,16 @@
 const Footer = () => {
     return(
         <div className="footer">
-            <h2>Contact Us</h2>
-            <i className="fa-brands fa-instagram"></i>
-            <p>arto_rashid</p>
-            <p>bigee_eeeeee</p>
-            <i className="fa-brands fa-snapchat"></i>
-            <p>artoooo.o</p>
-            <p>egemensarii</p>
-            <i className="fa fa-envelope" aria-hidden="true"></i>
-            <p>artoghrul.rashid23@fryeburgacademy.org</p>
-            <p>egemen.sari24@fryeburgacademy.org</p>
+            <p>&copy; Fryeburg Academy</p>
+            <a className="brandlinks" href="https://www.instagram.com/arto_rashid/" target="_blank">
+                <span className="fa fa-brands fa-instagram" style={{padding:"0.5em 0.6em"}}></span>
+            </a>
+            <a className="brandlinks" href="https://www.snapchat.com/add/artoooo.o" target="_blank">
+                <span className="fa fa-brands fa-snapchat"></span>
+            </a>
+            <a className="brandlinks" href="mailto:artoghrul.rashid23@fryeburgacademy.org" target="_blank">
+                <span className="fa fa-envelope" aria-hidden="true"></span>
+            </a>
         </div>
     )
 }

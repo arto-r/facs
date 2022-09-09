@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import Footer from "./Footer"
 import './Profile.css'
 import AppCourse from './AppCourse'
-import NavbarLoggedIn from './NavbarLoggedIn';
+import Navbar from './Navbar'
 
 const Profile = () => {
     return (
         <>
-            <NavbarLoggedIn />
+            <Navbar loggedIn={true} />
             <div className="everything">
                 <div className="teacher-profile">
                     <img className="selfie-profile" src={require("./assets/selfie.jpg")} alt="selfie.jpg"/>
