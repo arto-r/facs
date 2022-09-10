@@ -14,16 +14,52 @@ const Profile = () => {
                 </div>
                 <div className='courses'>
                     <Link to="/coursepage">
-                        <AppCourse id={"p1"} />
+                        <AppCourse 
+                            img={require("./assets/blurredfa.jpg")}
+                            name={"Course 1"}
+                            id={"n1"}
+                            price={11.99}
+                            text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                    Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                    obcaecati veniam"
+                                }
+                        />
                     </Link>
                     <Link  to="/coursepage">
-                        <AppCourse id={"p2"} />
+                        <AppCourse 
+                            img={require("./assets/blurredfa.jpg")}
+                            name={"Course 2"}
+                            id={"n2"}
+                            price={11.99}
+                            text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                    Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                    obcaecati veniam"
+                                }
+                        />
                     </Link>
                     <Link to='/coursepage'>
-                        <AppCourse id={"p3"} />
+                        <AppCourse 
+                            img={require("./assets/blurredfa.jpg")}
+                            name={"Course 3"}
+                            id={"n3"}
+                            price={11.99}
+                            text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                    Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                    obcaecati veniam"
+                                }
+                        />
                     </Link>
                     <Link to='/coursepage'>
-                        <AppCourse id={"p4"} />
+                        <AppCourse 
+                            img={require("./assets/blurredfa.jpg")}
+                            name={"Course 4"}
+                            id={"n4"}
+                            price={11.99}
+                            text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                    Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                    obcaecati veniam"
+                                }
+                        />
                     </Link>
                 </div>
             </div>

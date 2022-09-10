@@ -24,16 +24,52 @@ const AppCourses = () => {
             <h1><Link to='/courses' style={{color:'white'}}>Offered Courses</Link></h1>
             <div className="courses" >
                 <Link to="/coursepage">
-                    <AppCourse id={"n1"} />
+                    <AppCourse 
+                        img={require("./assets/blurredfa.jpg")}
+                        name={"Course 1"}
+                        id={"n1"} 
+                        price={11.99}
+                        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                Omnis deleniti voluptatibus nisi reprehenderit atque! \
+                                Itaque nobis, ipsam, obcaecati veniam"
+                            }
+                    />
                 </Link>
                 <Link  to="/coursepage">
-                    <AppCourse id={"n2"} />
+                    <AppCourse 
+                        img={require("./assets/blurredfa.jpg")}
+                        name={"Course 2"}
+                        id={"n2"}
+                        price={11.99}
+                        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                obcaecati veniam"
+                            }
+                    />
                 </Link>
                 <Link to='/coursepage'>
-                    <AppCourse id={"n3"} />
+                    <AppCourse 
+                        img={require("./assets/blurredfa.jpg")}
+                        name={"Course 3"}
+                        id={"n3"}
+                        price={11.99}
+                        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                obcaecati veniam"
+                            }
+                    />
                 </Link>
                 <Link to='/coursepage'>
-                    <AppCourse id={"n4"} />
+                    <AppCourse 
+                        img={require("./assets/blurredfa.jpg")}
+                        name={"Course 4"}
+                        id={"n4"}
+                        price={11.99}
+                        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
+                                Omnis deleniti voluptatibus nisi reprehenderit atque! Itaque nobis, ipsam, \
+                                obcaecati veniam"
+                            }
+                    />
                 </Link>
                 <Link to='/courses' style={{textDecoration:"none"}}><p id="next" className="item">&#10095;</p></Link>
             </div>
