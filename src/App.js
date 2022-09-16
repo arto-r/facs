@@ -1,5 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
+import { useEffect } from 'react';
 import Navbar from './Navbar';
 import Header from './Header';
 import AppCourses from './AppCourses';
@@ -13,6 +14,10 @@ import Courses from './Courses';
 import Profile from './Profile';
 
 const App = () => {
+
+  useEffect(() => {
+    document.title = 'Home Page';
+  }); 
   
   return (
     <>
@@ -23,7 +28,7 @@ const App = () => {
         <Route path='login' element={<Login />} />
         <Route path='coursepage' element={<Coursepage />} />
         <Route path='courses' element={<Courses />} />
-        <Route path='profile' element={<Profile />} />
+        <Route path='profile' element={<Profile number={3} />} />
       </Routes>
     </>
   )

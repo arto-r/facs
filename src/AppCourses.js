@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom'
 import AppCourse from './AppCourse'
 
 const AppCourses = () => {
-
     function reveal1() {
         var reveals = document.querySelectorAll(".item");
-
+    
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = reveals[i].getBoundingClientRect().top;
@@ -17,8 +16,9 @@ const AppCourses = () => {
             }
         }
     }
-
+    
     window.addEventListener("scroll", reveal1);
+
     return(
         <>
             <h1><Link to='/courses' style={{color:'white'}}>Offered Courses</Link></h1>
@@ -26,7 +26,9 @@ const AppCourses = () => {
                 <Link to="/coursepage">
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
-                        name={"Course 1"}
+                        coursename={"Course 1"}
+                        fname={"Name"}
+                        lname={"Surname"}
                         id={"n1"} 
                         price={11.99}
                         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
@@ -38,7 +40,9 @@ const AppCourses = () => {
                 <Link  to="/coursepage">
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
-                        name={"Course 2"}
+                        coursename={"Course 2"}
+                        fname={"Name"}
+                        lname={"Surname"}
                         id={"n2"}
                         price={11.99}
                         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
@@ -50,7 +54,9 @@ const AppCourses = () => {
                 <Link to='/coursepage'>
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
-                        name={"Course 3"}
+                        coursename={"Course 3"}
+                        fname={"Name"}
+                        lname={"Surname"}
                         id={"n3"}
                         price={11.99}
                         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
@@ -62,7 +68,9 @@ const AppCourses = () => {
                 <Link to='/coursepage'>
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
-                        name={"Course 4"}
+                        coursename={"Course 1"}
+                        fname={"Name"}
+                        lname={"Surname"}
                         id={"n4"}
                         price={11.99}
                         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. \
