@@ -23,15 +23,15 @@ const Navbar = ({ loggedIn }) => {
 
     return(
         <div id="navbar" className="topnav">
-            <Link to='../'>Home</Link>
-            <Link to='../courses'>Courses</Link>
+            <Link to='/facs'>Home</Link>
+            <Link to='/facs/courses'>Courses</Link>
             <div className="right">
                 {!loggedIn ? 
                 <>
-                    <Link to='../signup'>Sign Up</Link>
-                    <Link to='../login'>Login</Link>
+                    <Link to='/facs/signup'>Sign Up</Link>
+                    <Link to='/facs/login'>Login</Link>
                 </> :
-                <Link to='../profile'>Profile</Link>}
+                <Link to='/facs/profile'>Profile</Link>}
             </div>
             <a className='icon' onClick={myFunction}><i className="fa fa-bars"></i></a>
         </div>

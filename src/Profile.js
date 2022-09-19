@@ -23,7 +23,6 @@ const Profile = ({ number }) => {
                     <p>Instagram: arto_rashid</p>
                     <p>Facebook: ----</p>
                 </div>
-
                 <div className='profilecoursesandh1' >
                     <h1>Artoghrul's Bio</h1>
                     
@@ -32,7 +31,7 @@ const Profile = ({ number }) => {
 
                     <div id="profilecourses" style={{gridTemplateColumns:number>3?"repeat(4,1fr)":`repeat(${number}, 1fr)`}}>
                         <div className='profilecourse'>
-                            <Link to="/coursepage">
+                            <Link to="/facs/coursepage">
                                 <AppCourse 
                                     img={require("./assets/blurredfa.jpg")}
                                     coursename={"Course 1"}
@@ -49,7 +48,7 @@ const Profile = ({ number }) => {
                         </div>
 
                         <div className='profilecourse'>
-                            <Link to="/coursepage">
+                            <Link to="/facs/coursepage">
                                 <AppCourse 
                                     img={require("./assets/blurredfa.jpg")}
                                     coursename={"Course 2"}
@@ -66,7 +65,7 @@ const Profile = ({ number }) => {
                         </div>
 
                         <div className='profilecourse'>
-                            <Link to='/coursepage'>
+                            <Link to='/facs/coursepage'>
                                 <AppCourse 
                                     img={require("./assets/blurredfa.jpg")}
                                     coursename={"Course 3"}
@@ -83,7 +82,7 @@ const Profile = ({ number }) => {
                         </div>
 
                         {/* <div className='profilecourse'>
-                            <Link to='/coursepage'>
+                            <Link to='/facs/coursepage'>
                                 <AppCourse 
                                     img={require("./assets/blurredfa.jpg")}
                                     coursename={"Course 4"}

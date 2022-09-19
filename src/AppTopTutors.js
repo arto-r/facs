@@ -23,19 +23,19 @@ const AppTopTutors = () => {
         <div className="toptutors">
             <h1 style={{textAlign: 'center',position:'relative',top:'25px'}}><Link to='/vote' style={{color:'white'}}>Top tutors of the month</Link></h1>
             <div className="notheading">
-                <Link to="/profile" style={{textDecoration:"none"}}>
+                <Link to="/facs/profile" style={{textDecoration:"none"}}>
                     <AppTopTutor 
                         fullname="Chris Kwon"
                         profilepic={require("./assets/blurredfa.jpg")}
                         place={2}/>
                 </Link>
-                <Link to="/profile" style={{textDecoration:"none"}}>
+                <Link to="/facs/profile" style={{textDecoration:"none"}}>
                     <AppTopTutor 
                         fullname="Artoghrul Rashid"
                         profilepic={require("./assets/blurredfa.jpg")}
                         place={1}/>
                 </Link>
-                <Link to="/profile" style={{textDecoration:"none"}}>
+                <Link to="/facs/profile" style={{textDecoration:"none"}}>
                     <AppTopTutor 
                         fullname="Egemen Sarjkuhubhuybyi"
                         profilepic={require("./assets/blurredfa.jpg")}

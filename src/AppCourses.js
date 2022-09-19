@@ -23,7 +23,7 @@ const AppCourses = () => {
         <>
             <h1><Link to='/courses' style={{color:'white'}}>Offered Courses</Link></h1>
             <div className="courses" >
-                <Link to="/coursepage">
+                <Link to="/facs/coursepage">
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
                         coursename={"Course 1"}
@@ -37,7 +37,7 @@ const AppCourses = () => {
                             }
                     />
                 </Link>
-                <Link  to="/coursepage">
+                <Link  to="/facs/coursepage">
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
                         coursename={"Course 2"}
@@ -51,7 +51,7 @@ const AppCourses = () => {
                             }
                     />
                 </Link>
-                <Link to='/coursepage'>
+                <Link to='/facs/coursepage'>
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
                         coursename={"Course 3"}
@@ -65,7 +65,7 @@ const AppCourses = () => {
                             }
                     />
                 </Link>
-                <Link to='/coursepage'>
+                <Link to='/facs/coursepage'>
                     <AppCourse 
                         img={require("./assets/blurredfa.jpg")}
                         coursename={"Course 1"}
@@ -79,7 +79,7 @@ const AppCourses = () => {
                             }
                     />
                 </Link>
-                <Link to='/courses' style={{textDecoration:"none"}}><p id="next" className="item">&#10095;</p></Link>
+                <Link to='/facs/courses' style={{textDecoration:"none"}}><p id="next" className="item">&#10095;</p></Link>
             </div>
         </>
     )
