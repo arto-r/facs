@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/facs/static/css/main.977fef4f.css",
-    "main.js": "/facs/static/js/main.68d502c1.js",
-    "static/js/787.ccd97811.chunk.js": "/facs/static/js/787.ccd97811.chunk.js",
-    "static/media/selfie.jpg": "/facs/static/media/selfie.70a20c740da9ce863b33.jpg",
-    "static/media/blurredfa.jpg": "/facs/static/media/blurredfa.d7832e0019e08de778db.jpg",
-    "index.html": "/facs/index.html",
-    "main.977fef4f.css.map": "/facs/static/css/main.977fef4f.css.map",
-    "main.68d502c1.js.map": "/facs/static/js/main.68d502c1.js.map",
-    "787.ccd97811.chunk.js.map": "/facs/static/js/787.ccd97811.chunk.js.map"
+    "main.css": "/facourseshare/static/css/main.1841260a.css",
+    "main.js": "/facourseshare/static/js/main.4ad0c2a1.js",
+    "static/js/787.ccd97811.chunk.js": "/facourseshare/static/js/787.ccd97811.chunk.js",
+    "static/media/selfie.jpg": "/facourseshare/static/media/selfie.70a20c740da9ce863b33.jpg",
+    "static/media/blurredfa.jpg": "/facourseshare/static/media/blurredfa.d7832e0019e08de778db.jpg",
+    "index.html": "/facourseshare/index.html",
+    "main.1841260a.css.map": "/facourseshare/static/css/main.1841260a.css.map",
+    "main.4ad0c2a1.js.map": "/facourseshare/static/js/main.4ad0c2a1.js.map",
+    "787.ccd97811.chunk.js.map": "/facourseshare/static/js/787.ccd97811.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.977fef4f.css",
-    "static/js/main.68d502c1.js"
+    "static/css/main.1841260a.css",
+    "static/js/main.4ad0c2a1.js"
   ]
 }
